@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบบริหารจัดการข้อมูลสารสนเทศ สช.อ.ธารโต</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #fcfcfc;
+        }
+        .th-sarabun {
+            font-size: 1.4rem; /* ปรับขนาดให้เข้ากับฟอนต์ไทย */
+            line-height: 1.6;
+        }
+        .menu-card {
+            transition: all 0.3s ease;
+        }
+        .menu-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.1), 0 8px 10px -6px rgba(220, 38, 38, 0.1);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-white border-b border-red-100 shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/60/D32F2F/FFFFFF?text=Logo" alt="โลโก้ สช.อ.ธารโต" class="w-14 h-14 object-contain">
+                <div>
+                    <h1 class="text-2xl font-bold text-red-600 leading-tight">ระบบบริหารจัดการข้อมูลสารสนเทศ</h1>
+                    <p class="text-gray-500 font-medium">สำนักงานการศึกษาเอกชนอำเภอธารโต</p>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <span class="bg-red-50 text-red-600 px-4 py-1 rounded-full text-sm font-semibold border border-red-100">
+                    Tharto PEAO Portal
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">ยินดีต้อนรับสู่ระบบงาน</h2>
+                <div class="h-1 w-20 bg-red-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="#" class="menu-card bg-white border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <i class="fa-solid fa-calculator text-5xl text-red-600 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-700 th-sarabun">ระบบงบประมาณ</span>
+                </a>
+
+                <a href="#" class="menu-card bg-white border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <i class="fa-solid fa-file-signature text-5xl text-red-600 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-700 th-sarabun">ระบบทะเบียนคุมหนังสือ</span>
+                </a>
+
+                <a href="#" class="menu-card bg-white border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <i class="fa-solid fa-users-gears text-5xl text-red-600 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-700 th-sarabun">ระบบบริหารบุคลากร</span>
+                </a>
+
+                <a href="#" class="menu-card bg-white border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <i class="fa-solid fa-chart-line text-5xl text-red-600 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-700 th-sarabun">ระบบรายงานสถิติ</span>
+                </a>
+
+                <a href="#" class="menu-card bg-white border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <i class="fa-solid fa-folder-open text-5xl text-red-600 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-700 th-sarabun">ระบบคลังข้อมูลเอกสาร</span>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600 text-lg mb-1">
+                Copyright @2025 สำนักงานการศึกษาเอกชนอำเภอธารโต
+            </p>
+            <p class="text-gray-400 text-sm tracking-widest uppercase">
+                Developed by <span class="text-red-500 font-bold">Boss</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
